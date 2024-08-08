@@ -8,19 +8,24 @@
 <body>
     <form action="" method="post">
     <p>digite seu nome:</p>
-    <input type="text" name="nome" placeholder="primeiro nome">
-    <input type="email" name="email" placeholder="xxxx@gmail.com.br" value="@gmail.com.br">
-    <input type="number" name="CPF" placeholder="xxx.xxx.xxx-xx">
+    <input type="text" name="nome" placeholder="primeiro nome" required>
+    <p>digite o seu email</p>
+    <input type="email" name="email" placeholder="xxxx@gmail.com.br" value="@gmail.com.br" required>
+    <p>insira seu CPF</p>
+    <input type="number" name="CPF" placeholder="xxx.xxx.xxx-xx" required>
+    <p>vocÊ trabalha?</p>
     <input type="radio" name="work" value="sim"> quem sabe
     <input type="radio" name="work" value="não"> talvez
     <p>onde vc come banana?</p>
-        <select name="estados" id="">
+        <select name="estados" id="" required>
             <option value="1"> acre</option>
             <option value="2"> amapa</option>
             <option value="3"> sudeste</option>
             <option value="4"> sorvete</option>
             <option value="5"> carambola</option>
+            <p>tem reclamações?</p>
             <textarea name="reclamações" id=""></textarea>
+            <p>finalizar</p>
             <button type="submit">enviar</button>
             <button type="reset">apagar</button>
         </select>
